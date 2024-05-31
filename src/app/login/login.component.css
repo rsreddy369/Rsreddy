@@ -1,0 +1,33 @@
+.parent{
+    width: 100vw;
+    height: 100vh;
+    background-color: gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    width: 200px;
+    height: 300px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+button{
+    width: 150px;
+    height: 25px;
+    margin-top: 20px;
+    background-color: green;
+    border-radius: 5px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: aqua;
+}
+input{
+    border: 2px solid black;
+    height: 30px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
