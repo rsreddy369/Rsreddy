@@ -8,17 +8,24 @@
 .child{
     height: auto;
     width: 50%;
-    background-color: chartreuse;
+    background-color: white;
     border-radius: 10px;
     text-align: center;
-    margin-top: 50px;
-    margin-left: 350px;
+    margin-top: 5px;
 }
 button{
     color: chocolate;
     background-color: aqua;
+    margin-top: 5px;
 }
 button:hover{
     cursor: pointer;
     background-color: greenyellow;
+}
+input{
+    margin-top: 5px;
+}
+table{
+    margin-left: 165px;
+
 }

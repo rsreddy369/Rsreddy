@@ -1,0 +1,22 @@
+<div class="parent">
+    <div class="child">
+        <label for="">Car Company Name:</label>
+        <select [(ngModel)]="company">
+            <option value="">select Car</option>
+            <option >Audi</option>
+            <option >Benz</option>
+            <option >Mustang</option>
+            <option >Rollsroyce</option>
+            <option >Tata</option>
+            <option >Mahindra</option>
+        </select>
+        <div class="c1">
+        <img *ngIf="company=='Audi'" src="assets/audi.avif" alt="img">
+        <img *ngIf="company=='Benz'" src="assets/benz.avif" alt="img">
+        <img *ngIf="company=='Mustang'" src="assets/mustang.avif" alt="img">
+        <img *ngIf="company=='Rollsroyce'" src="assets/hyundai.webp" alt="img">
+        <img *ngIf="company=='Tata'" src="assets/tata.webp" alt="img">
+        <img *ngIf="company=='Mahindra'" src="assets/mahindra.webp" alt="img">
+    </div>
+    </div>
+</div>

@@ -1,1 +1,28 @@
-<p>event works!</p>
+<div class="parnet">
+    <div class="child">
+
+        <h1>Event Registration</h1>
+        <label for="">Name:</label>
+        <input type="text" [(ngModel)]="name">
+        <button [disabled]="!(name)" (click)="register()">Register</button>
+        <br><br>
+
+        <h3>Registerd Users</h3>
+        <div>
+        <h2 *ngFor="let name of names; let i=index" >
+            {{i+1}}.
+            {{name}}
+            <button class="delete" (click)="delete(i)">Delete</button>
+            <button class="salutation1" *ngIf="names.length" (click)="salutation1(i)">MR</button>
+            <button class="salutation2" *ngIf="names.length" (click)="salutation2(i)">MS</button>
+
+        </h2>
+    </div>
+    <button class="delete" *ngIf="names.length"  (click)="deletelast()" >Deletelast</button>
+    <br>
+    <button class="delete" *ngIf="names.length" (click)="deleteall()">Deleteall</button>
+    <button class="atoz" *ngIf="names.length" (click)="atoz()" >A->Z</button>
+    <button class="ztoa" *ngIf="names.length" (click)="ztoa()">Z->A</button>
+    <button class="salutation" *ngIf="names.length" (click)="salutation()">Salutation</button>
+    </div>
+</div>
