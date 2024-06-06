@@ -17,6 +17,9 @@ import { PipesComponent } from './pipes/pipes.component';
 import { CarcompaniesComponent } from './carcompanies/carcompanies.component';
 import { ShoppingComponent } from './shopping/shopping.component';
 import { DicegameComponent } from './dicegame/dicegame.component';
+import { VehiclesComponent } from './vehicles/vehicles.component';
+import { BankaccountsComponent } from './bankaccounts/bankaccounts.component';
+import { FlipkartComponent } from './flipkart/flipkart.component';
 
 const routes: Routes = [
   {path:'login',component:LoginComponent},
@@ -35,6 +38,9 @@ const routes: Routes = [
     {path:'pipes',component:PipesComponent},
     {path:'shopping',component:ShoppingComponent},
     {path:'dicegame',component:DicegameComponent},
+    {path:'vehicles',component:VehiclesComponent},
+    {path:'bankaccounts',component:BankaccountsComponent},
+    {path:'flipkart',component:FlipkartComponent},
   ]},
   {path:'',component:LoginComponent},
   {path:'**',component:PagenotfoundComponent}

@@ -32,12 +32,12 @@
                 <input type="radio" name="Free Delivary:"[(ngModel)]="isFreeDelivary"[value]=false id="">
                 <label for="">No</label>
                 <br>
-                <button (click)="atc()">Add to Cart</button>
+                <button class="btn btn-success"  (click)="atc()">Add to Cart</button>
             </div>
         </div>
     </div>
     <div class="child2">
-        <table border="3">
+        <table border="3" class="table table-dark table-bordered">
             <thead>
                 <tr>
                     <th>S.NO</th>
@@ -55,7 +55,7 @@
                     <td>{{product.price |balance}}</td>
                     <td>{{product.rating}}</td>
                     <td >{{product.freedelivary}}</td>
-                    <td><button (click)="delete(i)">Delete</button></td>
+                    <td><button class="btn btn-danger" (click)="delete(i)">Delete</button></td>
                 </tr>
             </tbody>
         </table>

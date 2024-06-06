@@ -22,6 +22,10 @@ import { BalancePipe } from './balance.pipe';
 import { CarcompaniesComponent } from './carcompanies/carcompanies.component';
 import { ShoppingComponent } from './shopping/shopping.component';
 import { DicegameComponent } from './dicegame/dicegame.component';
+import { VehiclesComponent } from './vehicles/vehicles.component';
+import { HttpClientModule } from '@angular/common/http';
+import { BankaccountsComponent } from './bankaccounts/bankaccounts.component';
+import { FlipkartComponent } from './flipkart/flipkart.component';
 
 @NgModule({
   declarations: [
@@ -44,11 +48,15 @@ import { DicegameComponent } from './dicegame/dicegame.component';
     CarcompaniesComponent,
     ShoppingComponent,
     DicegameComponent,
+    VehiclesComponent,
+    BankaccountsComponent,
+    FlipkartComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
