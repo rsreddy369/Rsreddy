@@ -64,6 +64,7 @@ delete(id:string){
   this._vehicleService.deleteVehicle(id).subscribe(
     (data:any)=>{
       alert("Deleted Successfully");
+      location.reload();
     },
     (err:any)=>{
       alert("Internal server error");

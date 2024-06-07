@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -20,6 +20,9 @@ import { DicegameComponent } from './dicegame/dicegame.component';
 import { VehiclesComponent } from './vehicles/vehicles.component';
 import { BankaccountsComponent } from './bankaccounts/bankaccounts.component';
 import { FlipkartComponent } from './flipkart/flipkart.component';
+import { CreatVehicleComponent } from './creat-vehicle/creat-vehicle.component';
+import { CreateAccountComponent } from './create-account/create-account.component';
+
 
 const routes: Routes = [
   {path:'login',component:LoginComponent},
@@ -41,6 +44,9 @@ const routes: Routes = [
     {path:'vehicles',component:VehiclesComponent},
     {path:'bankaccounts',component:BankaccountsComponent},
     {path:'flipkart',component:FlipkartComponent},
+    {path:'createvehicle',component:CreatVehicleComponent},
+    {path:'createaccount',component:CreateAccountComponent},
+    
   ]},
   {path:'',component:LoginComponent},
   {path:'**',component:PagenotfoundComponent}

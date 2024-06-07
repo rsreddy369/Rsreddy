@@ -25,6 +25,10 @@ export class BankaccountService {
     return  this._httpClient.get("https://6128991386a213001729f9df.mockapi.io/test/v1/principals?sortby="+column+"&order="+order+"&limit=10&page=1");
   }
 
+  createbankaccount(data:any){
+    return this._httpClient.post("https://6128991386a213001729f9df.mockapi.io/test/v1/principals",data);
+  }
+
   deleteaccounts(id:string){
     return this._httpClient.delete("https://6128991386a213001729f9df.mockapi.io/test/v1/principals/"+id);
   }
